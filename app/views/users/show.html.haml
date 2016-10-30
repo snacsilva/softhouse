@@ -1,0 +1,25 @@
+%p#notice= notice
+%p
+  %strong Name:
+  = @user.name
+%p
+  %strong Nickname:
+  = @user.nickname
+%p
+  %strong Date birth:
+  = @user.date_birth
+%p
+  %strong City:
+  = @user.city
+%p
+  %strong State:
+  = @user.state
+%p
+  %strong Sex:
+  = @user.sex
+%p
+  %strong Age:
+  = @user.age
+= link_to 'Edit', edit_user_path(@user)
+|
+= link_to 'Back', users_path
